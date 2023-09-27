@@ -9,7 +9,6 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-  Image,
   Tabs,
   TabList,
   Tab,
@@ -19,6 +18,7 @@ import {
 import CarDetailsTable from './CarDetailsTable'
 import CarFeaturesList from './CarFeaturesList'
 import CarReview from './CarReview'
+import CarImages from './CarImages'
 import { generateUniqueKey } from '../../utils/helper'
 
 const CarModal = ({ ...props }) => {
@@ -30,13 +30,7 @@ const CarModal = ({ ...props }) => {
         <ModalHeader>{props.car.make} {props.car.model} {props.car.year}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <Image
-            borderRadius="xl"
-            size="lg"
-            m={4}
-            src={props.car.images}
-            alt={props.car.make + props.car.model + props.car.year}
-          />
+          <CarImages images={props.car.images} {...props} />
 
           <Tabs variant='enclosed'>
             <TabList>

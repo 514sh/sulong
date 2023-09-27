@@ -27,7 +27,9 @@ Find.propTypes = {
   handleOpenCarModal: PropTypes.func.isRequired,
   handleCloseCarModal: PropTypes.func.isRequired,
   openedCar: PropTypes.object,
-  lngLats: PropTypes.array.isRequired
+  lngLats: PropTypes.array.isRequired,
+  handlePrevImgClick: PropTypes.func.isRequired,
+  handleNextImgClick: PropTypes.func.isRequired,
 }
 
 export default Find

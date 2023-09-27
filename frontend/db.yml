@@ -75,6 +75,7 @@ cars:
       - reviewId: 2
     images:
       - http://localhost:3000/images/cars/2-01.jpeg
+      - http://localhost:3000/images/cars/2-02.jpeg
   - carId: 3
     make: Ford
     model: Mustang

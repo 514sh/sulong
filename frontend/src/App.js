@@ -14,11 +14,20 @@ const App = () => {
   const [isOpenCarModal, setIsOpenCarModal] = useState(false)
   const [openedCar, setOpenedCar] = useState({})
   const [lngLats, setLngLats] = useState([])
+  const [carImgIndex, setCarImgIndex] = useState(0)
 
   const handleOpenCarModal = (car) => {
     car = { ...car, reviews: car.reviews.map(review => reviews.find(allReview => review.reviewId === allReview.reviewId )) }
     setOpenedCar(car)
     setIsOpenCarModal(true)
+  }
+
+  const handlePrevImgClick = () => {
+    setCarImgIndex(Math.max(0, carImgIndex - 1))
+  }
+
+  const handleNextImgClick = (images) => {
+    setCarImgIndex(Math.min(images.length - 1, carImgIndex + 1))
   }
 
   useEffect(() => {
@@ -48,6 +57,9 @@ const App = () => {
           isOpenCarModal={isOpenCarModal}
           openedCar={openedCar}
           lngLats={lngLats}
+          handlePrevImgClick={handlePrevImgClick}
+          handleNextImgClick={handleNextImgClick}
+          carImgIndex={carImgIndex}
         />} />
         <Route path="/cars" element={<h1>My cars</h1>} />
         <Route path="/transactions" element={<h1>Transactions</h1>} />
