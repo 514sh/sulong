@@ -1,0 +1,681 @@
+users:
+  - userId: 1
+    admin: false
+    name: Mark Balagtas
+    email: mark.joseph.balagtas@outlook.com
+    password: password
+    driversLicense: driverslicense.jpg
+    paymentDetails:
+      - method: gcash
+      - reference: 09231407446
+    cars:
+      - carId: 1
+
+  - userId: 2
+    admin: false
+    name: Juan Dela Cruz
+    email: jdc@gmail.com
+    password: password
+    driversLicense: sample.jpg
+    paymentDetails:
+      - method: gcash
+      - reference: 09871405562
+cars:
+  - carId: 1
+    make: Toyota
+    model: Camry
+    year: 2022
+    vin: askdjlfsjdk123123
+    licensePlate: NFT547
+    registeredUntil: June 2024
+    registrationPhoto: registered.jpg
+    fuelType: Gasoline
+    engineSize: 2.0
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - sunroof
+      - navigation system
+    availability: true
+    location:
+      longitude: 123.3
+      latitude: 19.5
+    placeName: Saint Peter Parish Church, Plaza St., Apalit, Pampanga 2016, Philippines
+    pricePerDay: 10000
+    approved: true
+    owner: 1
+    reviews:
+      - reviewId: 1
+    images:
+      - http://localhost:3000/images/cars/1-01.jpeg
+  - carId: 2
+    make: Honda
+    model: Civic
+    year: 2021
+    vin: asdkljasd123123
+    licensePlate: ABC123
+    registeredUntil: May 2023
+    registrationPhoto: registered2.jpg
+    fuelType: Gasoline
+    engineSize: 1.8
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - backup camera
+      - Bluetooth
+    availability: true
+    location:
+      longitude: 124.0
+      latitude: 12.5
+    placeName: Rizal Park, Roxas Blvd, Ermita, Manila, 1000 Metro Manila, Philippines
+    pricePerDay: 8500
+    approved: true
+    owner: 2
+    reviews:
+      - reviewId: 2
+    images:
+      - http://localhost:3000/images/cars/2-01.jpeg
+  - carId: 3
+    make: Ford
+    model: Mustang
+    year: 2020
+    vin: zxcmnxbcv23456789
+    licensePlate: XYZ789
+    registeredUntil: July 2023
+    registrationPhoto: registered3.jpg
+    fuelType: Diesel
+    engineSize: 3.5
+    transmissionType: manual
+    seatingCapacity: 4
+    features:
+      - leather seats
+      - premium sound system
+    availability: true
+    location:
+      longitude: 121.0
+      latitude: 14.6
+    placeName: Taal Volcano, Talisay, Batangas, Philippines
+    pricePerDay: 12000
+    approved: true
+    owner: 3
+    reviews:
+      - reviewId: 3
+    images:
+      - http://localhost:3000/images/cars/3-01.jpeg
+  - carId: 4
+    make: Chevrolet
+    model: Equinox
+    year: 2023
+    vin: zxcvbnm7890
+    licensePlate: EQU123
+    registeredUntil: August 2024
+    registrationPhoto: registered4.jpg
+    fuelType: Gasoline
+    engineSize: 2.2
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - panoramic sunroof
+      - advanced safety features
+    availability: true
+    location:
+      longitude: 122.5
+      latitude: 10.3
+    placeName: El Nido, Palawan, Philippines
+    pricePerDay: 11000
+    approved: true
+    owner: 4
+    reviews:
+      - reviewId: 4
+    images:
+      - http://localhost:3000/images/cars/4-01.jpeg
+  - carId: 5
+    make: BMW
+    model: X5
+    year: 2022
+    vin: qwer1234asdf5678
+    licensePlate: BMWX5
+    registeredUntil: September 2024
+    registrationPhoto: registered5.jpg
+    fuelType: Diesel
+    engineSize: 3.0
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - leather interior
+      - adaptive cruise control
+    availability: true
+    location:
+      longitude: 121.1
+      latitude: 14.6
+    placeName: Intramuros, Manila, Philippines
+    pricePerDay: 13000
+    approved: true
+    owner: 5
+    reviews:
+      - reviewId: 5
+    images:
+      - http://localhost:3000/images/cars/5-01.jpeg
+  - carId: 6
+    make: Hyundai
+    model: Tucson
+    year: 2022
+    vin: lkjhasd89098765
+    licensePlate: TUC123
+    registeredUntil: July 2024
+    registrationPhoto: registered6.jpg
+    fuelType: Gasoline
+    engineSize: 2.4
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - touchscreen infotainment
+      - blind-spot monitoring
+    availability: true
+    location:
+      longitude: 121.0
+      latitude: 14.1
+    placeName: Banaue Rice Terraces, Ifugao, Philippines
+    pricePerDay: 10500
+    approved: true
+    owner: 6
+    reviews:
+      - reviewId: 6
+    images:
+      - http://localhost:3000/images/cars/6-01.jpeg
+  - carId: 7
+    make: Mercedes-Benz
+    model: C-Class
+    year: 2021
+    vin: poiuytrewq4321
+    licensePlate: MBC200
+    registeredUntil: October 2024
+    registrationPhoto: registered7.jpg
+    fuelType: Diesel
+    engineSize: 2.0
+    transmissionType: automatic
+    seatingCapacity: 4
+    features:
+      - premium leather seats
+      - advanced driver assistance
+    availability: true
+    location:
+      longitude: 123.8
+      latitude: 10.3
+    placeName: Chocolate Hills, Bohol, Philippines
+    pricePerDay: 12500
+    approved: true
+    owner: 7
+    reviews:
+      - reviewId: 7
+    images:
+      - http://localhost:3000/images/cars/7-01.jpeg
+  - carId: 8
+    make: Nissan
+    model: Rogue
+    year: 2023
+    vin: mnbcvbnm09876
+    licensePlate: NISSANR
+    registeredUntil: November 2024
+    registrationPhoto: registered8.jpg
+    fuelType: Gasoline
+    engineSize: 2.5
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - panoramic sunroof
+      - all-wheel drive
+    availability: true
+    location:
+      longitude: 122.1
+      latitude: 10.2
+    placeName: Mayon Volcano, Albay, Philippines
+    pricePerDay: 11500
+    approved: true
+    owner: 8
+    reviews:
+      - reviewId: 8
+    images:
+      - http://localhost:3000/images/cars/8-01.jpeg
+  - carId: 9
+    make: Volkswagen
+    model: Golf
+    year: 2022
+    vin: zxcvbnmasdfg1234
+    licensePlate: GOLF321
+    registeredUntil: December 2024
+    registrationPhoto: registered9.jpg
+    fuelType: Diesel
+    engineSize: 2.0
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - touchscreen infotainment
+      - adaptive cruise control
+    availability: true
+    location:
+      longitude: 121.3
+      latitude: 13.4
+    placeName: Mt. Apo, Davao City, Philippines
+    pricePerDay: 11000
+    approved: true
+    owner: 9
+    reviews:
+      - reviewId: 9
+    images:
+      - http://localhost:3000/images/cars/9-01.jpeg
+  - carId: 10
+    make: Subaru
+    model: Outback
+    year: 2021
+    vin: qwerty1234567890
+    licensePlate: SUBOUT
+    registeredUntil: October 2023
+    registrationPhoto: registered10.jpg
+    fuelType: Gasoline
+    engineSize: 2.5
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - all-wheel drive
+      - roof rails
+    availability: true
+    location:
+      longitude: 121.5
+      latitude: 14.0
+    placeName: Hundred Islands, Pangasinan, Philippines
+    pricePerDay: 9000
+    approved: true
+    owner: 10
+    reviews:
+      - reviewId: 10
+    images:
+      - http://localhost:3000/images/cars/10-01.jpeg
+  - carId: 11
+    make: Kia
+    model: Sportage
+    year: 2022
+    vin: poiuyt987654321
+    licensePlate: KIASPT
+    registeredUntil: August 2024
+    registrationPhoto: registered11.jpg
+    fuelType: Gasoline
+    engineSize: 2.4
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - touchscreen infotainment
+      - blind-spot monitoring
+    availability: true
+    location:
+      longitude: 123.2
+      latitude: 13.8
+    placeName: Puerto Princesa Underground River, Palawan, Philippines
+    pricePerDay: 9500
+    approved: true
+    owner: 11
+    reviews:
+      - reviewId: 11
+    images:
+      - http://localhost:3000/images/cars/11-01.jpeg
+  - carId: 12
+    make: Audi
+    model: A4
+    year: 2022
+    vin: lkjhgfdsa0987654321
+    licensePlate: AUDIA4
+    registeredUntil: September 2024
+    registrationPhoto: registered12.jpg
+    fuelType: Diesel
+    engineSize: 2.0
+    transmissionType: automatic
+    seatingCapacity: 4
+    features:
+      - premium leather seats
+      - advanced driver assistance
+    availability: true
+    location:
+      longitude: 121.1
+      latitude: 10.5
+    placeName: Tubbataha Reefs Natural Park, Sulu Sea, Philippines
+    pricePerDay: 13500
+    approved: true
+    owner: 12
+    reviews:
+      - reviewId: 12
+    images:
+      - http://localhost:3000/images/cars/12-01.jpeg
+  - carId: 13
+    make: Subaru
+    model: Forester
+    year: 2021
+    vin: asdfghjklm0987654321
+    licensePlate: SBRFRST
+    registeredUntil: November 2023
+    registrationPhoto: registered13.jpg
+    fuelType: Gasoline
+    engineSize: 2.5
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - all-wheel drive
+      - panoramic sunroof
+    availability: true
+    location:
+      longitude: 120.6
+      latitude: 15.2
+    placeName: Bantayan Island, Cebu, Philippines
+    pricePerDay: 9200
+    approved: true
+    owner: 13
+    reviews:
+      - reviewId: 13
+    images:
+      - http://localhost:3000/images/cars/13-01.jpeg
+  - carId: 14
+    make: Chevrolet
+    model: Malibu
+    year: 2023
+    vin: zxcvbnmasdfg12345
+    licensePlate: MLBU2023
+    registeredUntil: December 2024
+    registrationPhoto: registered14.jpg
+    fuelType: Gasoline
+    engineSize: 2.0
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - leather seats
+      - touchscreen infotainment
+    availability: true
+    location:
+      longitude: 123.7
+      latitude: 10.7
+    placeName: Mount Pulag, Benguet, Philippines
+    pricePerDay: 11000
+    approved: true
+    owner: 14
+    reviews:
+      - reviewId: 14
+    images:
+      - http://localhost:3000/images/cars/14-01.jpeg
+  - carId: 15
+    make: Hyundai
+    model: Santa Fe
+    year: 2022
+    vin: qazwsx0987654321
+    licensePlate: SNTEFE
+    registeredUntil: October 2024
+    registrationPhoto: registered15.jpg
+    fuelType: Diesel
+    engineSize: 2.2
+    transmissionType: automatic
+    seatingCapacity: 7
+    features:
+      - panoramic sunroof
+      - third-row seating
+    availability: true
+    location:
+      longitude: 121.5
+      latitude: 14.2
+    placeName: Sagada, Mountain Province, Philippines
+    pricePerDay: 12500
+    approved: true
+    owner: 15
+    reviews:
+      - reviewId: 15
+    images:
+      - http://localhost:3000/images/cars/15-01.jpeg
+  - carId: 16
+    make: Ford
+    model: Explorer
+    year: 2023
+    vin: mnbvcxzasdfgh7654321
+    licensePlate: XPLR2023
+    registeredUntil: September 2024
+    registrationPhoto: registered16.jpg
+    fuelType: Gasoline
+    engineSize: 3.0
+    transmissionType: automatic
+    seatingCapacity: 7
+    features:
+      - leather interior
+      - advanced safety features
+    availability: true
+    location:
+      longitude: 121.0
+      latitude: 13.6
+    placeName: Calaguas Islands, Camarines Norte, Philippines
+    pricePerDay: 13000
+    approved: true
+    owner: 16
+    reviews:
+      - reviewId: 16
+    images:
+      - http://localhost:3000/images/cars/16-01.jpeg
+  - carId: 17
+    make: Toyota
+    model: Highlander
+    year: 2022
+    vin: poiuytrewq0987654321
+    licensePlate: HIGHLND
+    registeredUntil: November 2024
+    registrationPhoto: registered17.jpg
+    fuelType: Hybrid
+    engineSize: 2.5
+    transmissionType: automatic
+    seatingCapacity: 8
+    features:
+      - hybrid technology
+      - third-row seating
+    availability: true
+    location:
+      longitude: 123.4
+      latitude: 10.2
+    placeName: Chocolate Hills, Bohol, Philippines
+    pricePerDay: 13500
+    approved: true
+    owner: 17
+    reviews:
+      - reviewId: 17
+    images:
+      - http://localhost:3000/images/cars/17-01.jpeg
+  - carId: 18
+    make: Volkswagen
+    model: Tiguan
+    year: 2021
+    vin: asdf0987654321qwer
+    licensePlate: TIGUAN21
+    registeredUntil: December 2023
+    registrationPhoto: registered18.jpg
+    fuelType: Gasoline
+    engineSize: 2.0
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - panoramic sunroof
+      - touchscreen infotainment
+    availability: true
+    location:
+      longitude: 120.9
+      latitude: 15.6
+    placeName: Lake Sebu, South Cotabato, Philippines
+    pricePerDay: 9500
+    approved: true
+    owner: 18
+    reviews:
+      - reviewId: 18
+    images:
+      - http://localhost:3000/images/cars/18-01.jpeg
+  - carId: 19
+    make: Nissan
+    model: Maxima
+    year: 2023
+    vin: zxcvbnmasdfghj87654321
+    licensePlate: MXMA2023
+    registeredUntil: October 2024
+    registrationPhoto: registered19.jpg
+    fuelType: Gasoline
+    engineSize: 3.5
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - leather interior
+      - advanced safety features
+    availability: true
+    location:
+      longitude: 124.3
+      latitude: 13.4
+    placeName: Siargao Island, Surigao del Norte, Philippines
+    pricePerDay: 12000
+    approved: true
+    owner: 19
+    reviews:
+      - reviewId: 19
+    images:
+      - http://localhost:3000/images/cars/19-01.jpeg
+  - carId: 20
+    make: Lexus
+    model: RX
+    year: 2022
+    vin: qazwsx1234567890poiuyt
+    licensePlate: LEXRX22
+    registeredUntil: September 2024
+    registrationPhoto: registered20.jpg
+    fuelType: Hybrid
+    engineSize: 3.5
+    transmissionType: automatic
+    seatingCapacity: 5
+    features:
+      - hybrid technology
+      - premium leather seats
+    availability: true
+    location:
+      longitude: 121.2
+      latitude: 14.1
+    placeName: Mount Apo, Davao City, Philippines
+    pricePerDay: 12500
+    approved: true
+    owner: 20
+    reviews:
+      - reviewId: 20
+    images:
+      - http://localhost:3000/images/cars/20-01.jpeg
+
+
+schedules:
+  - scheduleId: 1
+    startDateTime: 2023-09-22 10:00:00.0
+    endDateTime: 2023-10-22 10:00:00.0
+    transactionId: 1
+    carId: 1
+
+transactions:
+  - transactionId: 1
+    renter: 2
+    provider: 1
+    status: booked
+    needed: 3000
+    paid: 500
+    scheduleId: 1
+
+reviews:
+  - reviewId: 1
+    reviewer: anonymous
+    comment: Sleek, comfortable.
+    rating: 5
+
+  - reviewId: 2
+    reviewer: user123
+    comment: Great handling, but could be more fuel-efficient.
+    rating: 4
+
+  - reviewId: 3
+    reviewer: carlover45
+    comment: Excellent value for the price.
+    rating: 5
+
+  - reviewId: 4
+    reviewer: adventurer123
+    comment: Took it on a road trip, performed flawlessly.
+    rating: 5
+
+  - reviewId: 5
+    reviewer: ecoconscious
+    comment: Wish it had better fuel economy, but overall a good car.
+    rating: 3
+
+  - reviewId: 6
+    reviewer: speeddemon
+    comment: This car is a beast on the highway!
+    rating: 5
+
+  - reviewId: 7
+    reviewer: familydriver
+    comment: Spacious interior, great for family outings.
+    rating: 4
+
+  - reviewId: 8
+    reviewer: techsavvy
+    comment: Love the advanced tech features.
+    rating: 4
+
+  - reviewId: 9
+    reviewer: outdoorsy
+    comment: Handles well on off-road trails.
+    rating: 4
+
+  - reviewId: 10
+    reviewer: citycommuter
+    comment: Maneuverability is excellent in city traffic.
+    rating: 4
+
+  - reviewId: 11
+    reviewer: longdistancedriver
+    comment: Drove it cross-country without any issues.
+    rating: 5
+
+  - reviewId: 12
+    reviewer: safetyfirst
+    comment: Advanced safety features provide peace of mind.
+    rating: 5
+
+  - reviewId: 13
+    reviewer: luxurylover
+    comment: The interior feels like a luxury car.
+    rating: 5
+
+  - reviewId: 14
+    reviewer: thriftybuyer
+    comment: Good value for the money spent.
+    rating: 4
+
+  - reviewId: 15
+    reviewer: environmentalist
+    comment: Fuel-efficient and eco-friendly.
+    rating: 4
+
+  - reviewId: 16
+    reviewer: weekendexplorer
+    comment: Perfect for weekend getaways.
+    rating: 5
+
+  - reviewId: 17
+    reviewer: carguru
+    comment: Impressive performance and handling.
+    rating: 5
+
+  - reviewId: 18
+    reviewer: roadwarrior
+    comment: Reliable for long-distance travel.
+    rating: 4
+
+  - reviewId: 19
+    reviewer: carenthusiast
+    comment: The engine packs a punch.
+    rating: 4
+
+  - reviewId: 20
+    reviewer: stylishdriver
+    comment: Gets compliments on its sleek design.
+    rating: 5

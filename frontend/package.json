@@ -1,0 +1,76 @@
+{
+  "name": "sulong",
+  "version": "1.0.0",
+  "description": "A car rental app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "webpack --mode=production",
+    "start:dev": "webpack serve --mode=development",
+    "start:prod": "serve -s -l 3000 build",
+    "start:db": "npx yaml-server --autoStart=off --port 3001 --database ./db.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/514sh/sulong.git"
+  },
+  "author": "Mark Joseph Balagtas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/514sh/sulong/issues"
+  },
+  "homepage": "https://github.com/514sh/sulong#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.49.0",
+    "eslint-plugin-react": "^7.33.2",
+    "file-loader": "^6.2.0",
+    "source-map": "^0.7.4",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "worker-loader": "^3.0.8",
+    "yaml-server": "^1.10.0"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "axios": "^1.5.1",
+    "core-js": "^3.32.2",
+    "framer-motion": "^10.16.4",
+    "mapbox-gl": "^2.15.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.16.0",
+    "regenerator-runtime": "^0.14.0",
+    "serve": "^14.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "not safari < 10",
+      "not chrome < 51",
+      "not android < 5",
+      "not ie < 12"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
