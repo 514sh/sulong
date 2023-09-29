@@ -2,19 +2,26 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router,
   Routes, Route, Link
 } from 'react-router-dom'
+import { Box } from '@chakra-ui/react'
 
 import Find from './components/Find/Find'
+import CarCard from './components/Find/CarCard'
+import Transactions from './components/MyTransactions/Transactions'
 
 import carService from './services/cars'
 import reviewService from './services/reviews'
+import transactionService from './services/transactions'
+
+import { generateUniqueKey } from './utils/helper'
 
 const App = () => {
   const [cars, setCars] = useState([])
   const [reviews, setReviews] = useState([])
   const [isOpenCarModal, setIsOpenCarModal] = useState(false)
   const [openedCar, setOpenedCar] = useState({})
-  const [lngLats, setLngLats] = useState([])
   const [carImgIndex, setCarImgIndex] = useState(0)
+  const [carsOfUser, setCarsOfUser] = useState([])
+  const [transactionsOfUser, setTransactionOfUser] = useState([])
 
   const handleOpenCarModal = (car) => {
     car = { ...car, reviews: car.reviews.map(review => reviews.find(allReview => review.reviewId === allReview.reviewId )) }
@@ -34,11 +41,18 @@ const App = () => {
     carService
       .getAll()
       .then(cars => {
-        setCars(cars)
-        setLngLats(lngLats.concat(cars.map(car => [car.location.longitude, car.location.latitude])))
+        setCars(cars.filter(car => car.approved && car.availability ))
+        setCarsOfUser(cars.filter(car => parseInt(car.owner) === 1))
       })
     reviewService.getAll().then(reviews => setReviews(reviews))
+
+    transactionService
+      .getAll()
+      .then(transactions => {
+        setTransactionOfUser(transactions)
+      })
   }, [])
+  console.log('cars of user ',carsOfUser)
   return (
     <Router>
       <div>
@@ -56,13 +70,15 @@ const App = () => {
           handleOpenCarModal={(car) => handleOpenCarModal(car)}
           isOpenCarModal={isOpenCarModal}
           openedCar={openedCar}
-          lngLats={lngLats}
           handlePrevImgClick={handlePrevImgClick}
           handleNextImgClick={handleNextImgClick}
           carImgIndex={carImgIndex}
         />} />
-        <Route path="/cars" element={<h1>My cars</h1>} />
-        <Route path="/transactions" element={<h1>Transactions</h1>} />
+        <Route path="/cars" element={
+          <Box>
+            {carsOfUser.map(car => <CarCard key={generateUniqueKey(car.id)} car={car} handleOpenCarModal={(car) => handleOpenCarModal(car)} />)}
+          </Box>} />
+        <Route path="/transactions" element={<Transactions transactions={transactionsOfUser} />} />
       </Routes>
     </Router>
   )

@@ -56,7 +56,7 @@ const CarModal = ({ ...props }) => {
           <Button colorScheme='blue' mr={3} onClick={props.handleCloseCarModal}>
               Close
           </Button>
-          <Button variant='ghost'>Secondary Action</Button>
+          <Button variant='ghost'>Book Now</Button>
         </ModalFooter>
       </ModalContent>
     </Modal>

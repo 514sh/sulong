@@ -33,10 +33,12 @@ const MapboxGLMap = ({ ...props }) => {
         mapboxgl: mapboxgl
       })
     )
-    console.log(props.lngLats)
-    props.lngLats.forEach(lngLat => {
+
+    props.cars.forEach(car => {
+      const lngLat = [car.location.longitude, car.location.latitude]
       addMarker(lngLat, map)
     })
+    console.log('map', mapContainer.current)
     // addMarker([120.772720, 14.946988], map)
     // Clean up the map when the component unmounts
     return () => map.remove()
@@ -53,7 +55,7 @@ const MapboxGLMap = ({ ...props }) => {
 }
 
 MapboxGLMap.propTypes = {
-  lngLats: PropTypes.array.isRequired,
+  cars: PropTypes.array.isRequired,
 }
 
 export default MapboxGLMap
