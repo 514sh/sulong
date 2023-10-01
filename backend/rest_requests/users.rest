@@ -1,0 +1,20 @@
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "name": "Mark",
+  "password": "123",
+  "email": "mark@gmail.com"
+}
+
+###
+POST http://localhost:5000/api/users/68022645-aaf2-4b0c-a8bf-6101de29f061
+Content-Type: application/json
+
+{
+  "method": "gcash",
+  "reference": "09231407456"
+}
+
+###
+GET http://localhost:5000/api/users/68022645-aaf2-4b0c-a8bf-6101de29f061
