@@ -4,7 +4,7 @@ Content-Type: application/json
 {
   "name": "Mark",
   "password": "123",
-  "email": "mark@gmail.com"
+  "email": "mark_01@gmail.com"
 }
 
 ###
@@ -18,3 +18,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:5000/api/users/68022645-aaf2-4b0c-a8bf-6101de29f061
+
+###
+GET http://localhost:5000/api/users
