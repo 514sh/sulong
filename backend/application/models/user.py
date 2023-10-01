@@ -3,7 +3,7 @@ from datetime import datetime
 from application.extensions import db
 class User(db.Model):
   __tablename__ = "users"
-  id = db.Column(db.String, primary_key = True, default = uuid.uuid4())
+  id = db.Column(db.Uuid, primary_key = True, default = uuid.uuid4())
   name = db.Column(db.String(255), nullable = False)
   email = db.Column(db.String(255), nullable = False, unique = True)
   admin = db.Column(db.Boolean, default = False)

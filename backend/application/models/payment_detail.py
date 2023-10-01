@@ -3,10 +3,10 @@ from application.extensions import db
 
 class PaymentDetail(db.Model):
   __tablename__ = "payment_details"
-  id = db.Column(db.String, primary_key = True, default = uuid.uuid4())
+  id = db.Column(db.Uuid, primary_key = True, default = uuid.uuid4())
   method = db.Column(db.String(32), nullable = False)
   reference = db.Column(db.String(16), nullable = False, unique = True)
-  user_id = db.Column(db.String, db.ForeignKey('users.id'))
+  user_id = db.Column(db.Uuid, db.ForeignKey('users.id'))
 
   def to_dict(self):
     return {
