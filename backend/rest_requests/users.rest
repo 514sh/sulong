@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:5000/api/users/68022645-aaf2-4b0c-a8bf-6101de29f061
+POST http://localhost:5000/api/users/8f240474-d09b-41a1-a889-2db908e0085f
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5000/api/users/68022645-aaf2-4b0c-a8bf-6101de29f061
+GET http://localhost:5000/api/users/8f240474-d09b-41a1-a889-2db908e0085f
 
 ###
 GET http://localhost:5000/api/users

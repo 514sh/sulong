@@ -27,7 +27,7 @@ def create_user():
   db.session.add(new_user)
   db.session.commit()
 
-  return jsonify(user_data), 201
+  return jsonify(new_user.to_dict()), 201
 
 @blueprint.route("/<uuid:user_id>", methods=['POST'])
 def add_user_payment_details(user_id):
@@ -37,5 +37,4 @@ def add_user_payment_details(user_id):
   new_payment_detail = PaymentDetail(**payment_detail_data)
   db.session.add(new_payment_detail)
   db.session.commit()
-
-  return jsonify(payment_detail_data), 201
+  return jsonify(new_payment_detail.to_dict()), 201

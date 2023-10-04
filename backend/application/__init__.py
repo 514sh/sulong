@@ -15,7 +15,6 @@ def create_app(db_uri):
   # with app.app_context():
   #   db.create_all()
 
-  # app.run(port=5000, debug=True)
   return app  
 
 def main():
