@@ -47,3 +47,15 @@ def response_create_payment_details(instance_user, client, app):
   id = instance_user.id
   response = client.post(f"/api/users/{id}", json=new_payment_detail)
   return response
+
+@pytest.fixture()
+def response_add_car(instance_user ,client, app):
+  new_car = {
+    "place_name": "Apalit, Pampanga, Philippines",
+    "longitude": 120.768539,
+    "latitude": 14.953650,
+    "price_per_day": 2000.50
+  }
+  id = instance_user.id
+  response = client.post(f"/api/cars/{id}", json=new_car)
+  return response

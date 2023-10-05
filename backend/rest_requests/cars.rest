@@ -1,0 +1,9 @@
+POST http://localhost:5000/api/cars/0be754ff-a344-45d2-850a-b02a0b8b91b1
+Content-Type: application/json
+
+{
+  "place_name": "Apalit, Pampanga, Philippines",
+  "longitude": 120.768539,
+  "latitude": 14.953650,
+  "price_per_day": 2000.50
+}

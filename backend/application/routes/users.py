@@ -33,7 +33,7 @@ def create_user():
 def add_user_payment_details(user_id):
   payment_detail_data = request.get_json()
   payment_detail_data["user_id"] = user_id
-  print(payment_detail_data)
+
   new_payment_detail = PaymentDetail(**payment_detail_data)
   db.session.add(new_payment_detail)
   db.session.commit()

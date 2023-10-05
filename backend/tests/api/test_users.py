@@ -22,8 +22,11 @@ def test_user_get_one(client, response_create_user ,instance_user):
 
 def test_add_user_payment_details(app,client, response_create_payment_details, instance_user):
   id = instance_user.id
-  # response_user = client.get(f"/api/users/{id}")
-  # print(response_create_payment_details.get_json())
-  response_user = client.get(f"/api/users/{id}")
 
-  print(instance_user.to_dict())
+  response_user = client.get(f"/api/users/{id}")
+  response_user_dict = dict(response_user.get_json())
+  
+  assert response_user.status_code == 200
+  assert response_user_dict["payment_details"][0]["method"] == "gcash"
+  assert response_user_dict["payment_details"][0]["reference"] == "09231407456"
+  assert response_user_dict["payment_details"][0]["user_id"] == instance_user.id

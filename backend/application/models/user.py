@@ -10,6 +10,7 @@ class User(db.Model):
   password = db.Column(db.String(255), nullable = False)
   created_at = db.Column(db.DateTime, default=datetime.now())
   payment_details = db.relationship('PaymentDetail', backref='user', lazy='subquery')
+  cars = db.relationship('Car', backref='user', lazy='subquery')
 
   def to_dict(self):
     return {
